@@ -16,3 +16,4 @@
 `npm run dev` — запускает сервер с hot-reload
 
 ### Ссылка на проект:https://yliuko.github.io/mesto/
+чеклист: https://code.s3.yandex.net/web-developer/checklists-pdf/new-program/checklist_13.pdf
