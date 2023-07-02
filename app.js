@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const express = require('express');
 const mongoose = require('mongoose');
 const { celebrate, Joi, errors } = require('celebrate');
@@ -8,7 +9,8 @@ const auth = require('./middlewares/auth');
 const defaultError = require('./errors/defaultError');
 const { urlValidation } = require('./middlewares/validation');
 
-const { PORT = 3000 } = process.env;
+// eslint-disable-next-line no-unused-vars
+const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 const app = express();
 
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
